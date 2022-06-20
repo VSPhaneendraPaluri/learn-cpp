@@ -1,21 +1,22 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(factory)
+project(prototype)
 
 set(HEADERS
-  Cat.h
-  Dog.h
-  PetSeller.h
-  PetInterface.h
-  PetType.h
+  Backhoe.h
+  Bulldozer.h
+  Excavator.h
+  Machine.h
+  Machines.h
   ReadMe.txt
 )
 
 set(SOURCES
-  Cat.cpp
-  Dog.cpp
+  Backhoe.cpp
+  Bulldozer.cpp
+  Excavator.cpp
+  Machines.cpp
   main.cpp
-  PetSeller.cpp
 )
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})

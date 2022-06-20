@@ -1,21 +1,19 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(factory)
+project(singleton)
 
 set(HEADERS
-  Cat.h
-  Dog.h
-  PetSeller.h
-  PetInterface.h
-  PetType.h
+  Singleton.h
+  User1.h
+  User2.h
   ReadMe.txt
 )
 
 set(SOURCES
-  Cat.cpp
-  Dog.cpp
+  Singleton.cpp
+  User1.cpp
+  User2.cpp
   main.cpp
-  PetSeller.cpp
 )
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})
