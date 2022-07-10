@@ -1,2 +1,0 @@
-add_subdirectory(design_patterns)
-add_subdirectory(test_doubles)
