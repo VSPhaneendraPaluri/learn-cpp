@@ -1,1 +1,0 @@
-python generator.py -b yes -c yes -r no -t Debug -v INFO
