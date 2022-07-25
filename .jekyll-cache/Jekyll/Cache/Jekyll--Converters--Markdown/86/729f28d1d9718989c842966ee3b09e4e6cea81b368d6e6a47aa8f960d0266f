@@ -1,0 +1,25 @@
+I"k<h3 id="cpp-works">Cpp Works</h3>
+<p>Welcome to the Cpp works page.  This page shall present an overview of the Cpp activities available.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Brief Overview</th>
+      <th>Folder Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Benchmarking Objects</td>
+      <td>Understanding benchmarking using Google Benchmark library</td>
+      <td>perf-marker</td>
+    </tr>
+    <tr>
+      <td>Design Patterns</td>
+      <td><ul><li>Creational</li><li>Structural</li><li>Behavioral</li></ul></td>
+      <td>design_patterns</td>
+    </tr>
+  </tbody>
+</table>
+:ET
