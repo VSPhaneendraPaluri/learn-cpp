@@ -1,2 +1,3 @@
 add_subdirectory(design_patterns)
+add_subdirectory(perf_marker)
 add_subdirectory(test_doubles)
