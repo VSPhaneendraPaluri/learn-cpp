@@ -1,11 +1,13 @@
-project(fake)
+project(bit_manipulations)
 
 set(SOURCES
-  TPatterns.cpp
+  BitManipulations.cpp
+  BitManipulations.h
+  TBitManipulations.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 target_link_libraries(${PROJECT_NAME} GTest::gtest_main GTest::gmock)
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER cpp/test_doubles)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER cpp/problem_solving)
 add_test(NAME ${PROJECT_NAME} COMMAND ${PROJECT_NAME})
 set_tests_properties(${PROJECT_NAME} PROPERTIES TIMEOUT 10)

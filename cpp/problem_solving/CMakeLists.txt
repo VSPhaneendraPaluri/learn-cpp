@@ -1,0 +1,2 @@
+add_subdirectory(bit_manipulations)
+add_subdirectory(string_operations)

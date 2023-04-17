@@ -1,2 +1,3 @@
 add_subdirectory(design_patterns)
+add_subdirectory(problem_solving)
 add_subdirectory(test_doubles)
