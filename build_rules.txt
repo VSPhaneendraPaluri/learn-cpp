@@ -1,11 +1,8 @@
-# configure
-cmake -B build -DCMAKE_BUILD_TYPE=Release
+# Build every C++ target and resolve Conan dependencies
+build.bat
 
-# build
-cmake --build ./build/ --config Release
+# Run all already-built executables (does not build)
+run.bat
 
-# run
- ./build/bin/conan_project
-
-# test
-ctest --test-dir build/
+# Remove build outputs and the local Conan environment
+clean.bat

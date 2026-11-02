@@ -1,11 +1,14 @@
 cmake_minimum_required(VERSION 3.22)
-project(learn-cpp)
+project(learn-cpp VERSION 0.1 LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
+  set(CMAKE_BUILD_TYPE Release CACHE STRING "Choose the build type." FORCE)
+endif()
 
 set_property(GLOBAL PROPERTY USE_FOLDERS TRUE)
-
-include(cmake/conan.cmake)
 
 # Global CMake output directories
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -13,6 +16,6 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 enable_testing()
-find_package(GTest)
+find_package(GTest CONFIG REQUIRED)
 
 add_subdirectory(cpp)

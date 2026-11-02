@@ -3,6 +3,7 @@
 char StringOperations::convertCharacterUppercaseToLowercase(char input)
 {
 	return (input | ' ');
+	//return (input + 32);
 }
 
 char StringOperations::convertCharacterLowercaseToUppercase(char input)

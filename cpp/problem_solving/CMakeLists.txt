@@ -1,2 +1,5 @@
 add_subdirectory(bit_manipulations)
+add_subdirectory(programming_fun)
 add_subdirectory(string_operations)
+add_subdirectory(sorting_operations)
+add_subdirectory(temp_test)
